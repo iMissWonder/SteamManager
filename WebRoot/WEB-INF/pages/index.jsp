@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" isELIgnored="false"%>
 <html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -10,6 +11,7 @@
     <meta name="author" content="">
 
     <title>SteamManager</title>
+
     <!-- Favicons -->
     <link rel="icon" href="${pageContext.request.contextPath}/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/favicon.ico" type="image/x-icon" />
@@ -260,7 +262,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="login"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
