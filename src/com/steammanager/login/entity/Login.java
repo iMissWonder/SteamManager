@@ -5,6 +5,7 @@ public class Login {
 	private int id;
 	private String username;
 	private String password;
+	private String steamid;
 	public int getId() {
 		return id;
 	}
@@ -22,6 +23,12 @@ public class Login {
 	}
 	public void setPassword(String userPassword) {
 		this.password = userPassword;
+	}
+	public String getSteamid() {
+		return steamid;
+	}
+	public void setSteamid(String steamid) {
+		this.steamid = steamid;
 	}
 	@Override
 	public String toString() {

@@ -38,14 +38,13 @@
 	
 	<!-- 扫描SQL语句存放文件 -->	
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="typeAliasesPackage" value="com.steammanager.login.entity" />
-		<property name="dataSource" ref="dataSource"/>
-		<property name="mapperLocations" value="classpath:com/steammanager/login/mapper/Login.xml"/>
+ 		<property name="dataSource" ref="dataSource"/>
+		<property name="mapperLocations" value="classpath:com/steammanager/*/mapper/*.xml"/>
 	</bean>
 
 	<!-- 扫描SQL语句映射文件 -->	
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.steammanager.login.mapper"/>
+		<property name="basePackage" value="com.steammanager.*.mapper"/>
 	</bean>
 	
 </beans>

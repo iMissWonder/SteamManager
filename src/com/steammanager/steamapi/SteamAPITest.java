@@ -19,8 +19,8 @@ public class SteamAPITest {
 			WebApi.setApiKey("AE4BA6A15C4F64A797EF1F30D92156BA");
 
 			//根据steam用户名创建steamId
-			SteamId id = SteamId.create("iMissWonder");
-			
+			SteamId id = SteamId.create("j9j8j7p");
+		
 			//以下可以输出不同字段
 			//测试输出头像Url
 			System.out.println(id.getAvatarFullUrl());
@@ -35,11 +35,11 @@ public class SteamAPITest {
 				//key代表该用户拥有游戏的id
 				Object key = entry.getKey();
 				
-				//测试输出当前游戏id
-				System.out.println(key);
-				
 				//val代表该游戏的游戏信息，类型为SteamGame,可以用SteamGame的方法解析
-				Object val = entry.getValue();
+				SteamGame val = entry.getValue();
+
+				//测试输出当前游戏id及名称
+				System.out.println(key +" Name:"+ val.getName());
 			}
 			
 			

@@ -48,7 +48,7 @@
                         <h3 class="panel-title">Please Sign In</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" action="/SteamManager/login" method="get">
+                        <form role="form" action="/SteamManager/login" method="post">
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Username" id="username" name="username" type="text" autofocus>

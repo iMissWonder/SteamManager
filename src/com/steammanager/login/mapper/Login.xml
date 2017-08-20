@@ -8,6 +8,7 @@
 			<id property="id" column="user_id" />
 			<result property="username" column="user_name" />
 			<result property="password" column="user_password" />        
+			<result property="steamid" column="user_steam_id" />        
 		</resultMap>
 
 		<select id="getUserByName" parameterType="string" resultMap="userMap">
