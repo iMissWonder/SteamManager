@@ -246,7 +246,12 @@
 		<groupId>c3p0</groupId>  
 		<artifactId>c3p0</artifactId>  
 		<version>0.9.1.2</version>  
-	</dependency> 
+	</dependency>
+	<dependency>
+		<groupId>com.github.go-ive</groupId>
+		<artifactId>steam-api</artifactId>
+		<version>5.0</version>
+	</dependency>
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>

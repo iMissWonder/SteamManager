@@ -20,11 +20,11 @@ public class LoginServiceImpl  implements LoginService{
         return null;
     }
     
-    public boolean checkRegister(String username, String password){
+    public boolean checkRegister(String username, String password,String steamid){
     	if(username != null){
 			Login user = userDao.findUserByName(username);
 			if (user == null){
-				userDao.addNewUser(username, password);
+				userDao.addNewUser(username, password,steamid);
 				return true;
 			}
     	}

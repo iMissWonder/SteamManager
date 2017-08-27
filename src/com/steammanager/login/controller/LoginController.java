@@ -34,7 +34,7 @@ public class LoginController {
 
     @RequestMapping(value="/register")
     public String register(Login login, Model model) throws Exception {
-    	if(loginService.checkRegister(login.getUsername(), login.getPassword()))
+    	if(loginService.checkRegister(login.getUsername(), login.getPassword(),login.getSteamid()))
 		{
     		return "login";
 		}

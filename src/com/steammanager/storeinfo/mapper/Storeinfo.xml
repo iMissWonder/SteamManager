@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.steammanager.storeinfo.mapper.StoreinfoMapper">
+
+		<resultMap type="com.steammanager.storeinfo.entity.Storeinfo" id="appMap">
+			<id property="id" column="app_id" />
+			<result property="name" column="app_name" />
+			<result property="image" column="app_image" />        
+			<result property="price" column="app_price" />        
+			<result property="initial" column="app_initial" />        
+			<result property="discount" column="app_discount" />        
+		</resultMap>
+
+		<select id="selectStoreinfo" resultMap = "appMap"> 
+			select * from app where app_name is not null limit 0,100;
+		</select>  
+
+	</mapper>

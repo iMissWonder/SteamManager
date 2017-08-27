@@ -97,33 +97,30 @@
                     <ul class="nav" id="side-menu">
                        
                         <li>
-                            <a href="index"><i class="fa fa-home fa-fw"></i>首页</a>
+                            <a href="index.html"><i class="fa fa-home fa-fw"></i>首页</a>
                         </li>
                         <li>
-                            <a href="myconcerned"><i class="fa fa-lightbulb-o fa-fw"></i>我的关注</a>
+                            <a href="myconcerned.html"><i class="fa fa-lightbulb-o fa-fw"></i>我的关注</a>
                         </li>
                         <li>
-                            <a href="storeinfo"><i class="fa fa-shopping-cart fa-fw"></i>商店信息</a>
+                            <a href="storeinfo.html"><i class="fa fa-shopping-cart fa-fw"></i>商店信息</a>
                         </li>
                         <li>
-                            <a href="myaccount"><i class="fa fa-smile-o fa-fw"></i>我的账户</a>
+                            <a href="myaccount.html"><i class="fa fa-smile-o fa-fw"></i>我的账户</a>
                         </li>
                         <li>
-                        	<a href="myapps"><i class="fa fa-gamepad"></i>我的游戏</a>
+                        	<a href="myapps.html"><i class="fa fa-gamepad"></i>我的游戏</a>
                         </li>
                          <li>
-                        	<a href="myfriends"><i class="fa fa-steam"></i>我的好友</a>
+                        	<a href="myfriends.html"><i class="fa fa-steam"></i>我的好友</a>
                         </li>
                         <li>
-                        	<a href="userq"><i class="fa fa-search"></i> 用户查询</a>
+                        	<a href="userq.html"><i class="fa fa-search"></i> 用户查询</a>
                         </li>
                          <li>
-                        	<a href="about"><i class="fa fa-key"></i> 关于我们</a>
+                        	<a href="about.html"><i class="fa fa-key"></i> 关于我们</a>
                         </li>
-                        <li>
-                             <a href="login"><i class="fa fa-lock"></i> 登入登出</a>
-                       	</li>
-                       
+                       <img src="${pageContext.request.contextPath}/Steam.png" width="100px" height="100px">
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -136,61 +133,96 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-9">
-             
-                    </div>
-                    <!-- /.col-lg-12 -->
-                </div>
-                </div>
+                     <h1 class="page-header"><i class="fa fa-info"></i> 关于</h1>
+                     </div>
+                  </div>
+               
+              
+             <div class="row clearfix" >
+             	<div class="col-md-6 column ui-sortable">
+             		<div class="panel panel-primary">
+   						 <div class="panel-heading">
+    	    				<h3 class="panel-title"><i class="fa fa-lightbulb-o fa-5x"></i>我的关注</h3>
+    						</div>
+  							 <ul class="list-group">
+  								<li class="list-group-item">关注的游戏</li>
+  								<li class="list-group-item">关注的游戏id</li>
+  								<li class="list-group-item">游戏logo</li>
+  								<li class="list-group-item">游戏的相关信息</li>
+  							</ul>
+             		</div>
+             	</div>
+             	<div class="col-md-6 column ui-sortable">
+             		<div class="panel panel-success">
+   						 <div class="panel-heading">
+    	    				<h3 class="panel-title"><i class="fa fa-shopping-cart fa-5x"></i>商店信息</h3>
+    					</div>
+   							 <ul class="list-group">
+  								<li class="list-group-item">Steam所有游戏的价格信息</li>
+  								<li class="list-group-item">原价</li>
+  								<li class="list-group-item">现价</li>
+  								<li class="list-group-item">折扣价</li>
+  							</ul>
+					</div>
+             	</div>
+             <div class="col-md-6 column ui-sortable">
+             		<div class="panel panel-info">
+   						 <div class="panel-heading">
+    	    				<h3 class="panel-title"><i class="fa fa-home fa-5x"></i>我的账户</h3>
+    					</div>
+  							 <ul class="list-group">
+  								<li class="list-group-item">与系统账号绑定的steam账号信息</li>
+  								<li class="list-group-item">可以通过手动输入steam64位id进行重新绑定</li>
+  								<li class="list-group-item">头像</li>
+  								<li class="list-group-item">上次登录、最爱、在线状态、真实姓名、地址</li>
+  							</ul>
+					</div>
+             	</div>
+             	<div class="col-md-6 column ui-sortable">
+             		<div class="panel panel-warning">
+   						 <div class="panel-heading">
+    	    				<h3 class="panel-title"><i class="fa fa-gamepad fa-5x"></i>我的游戏</h3>
+    					</div>
+  							<ul class="list-group">
+  								<li class="list-group-item">统计所有在绑定账户下的游戏</li>
+  								<li class="list-group-item">包含游戏ID、游戏名称、游戏logo</li>
+  								<li class="list-group-item">可以通过点击关注按钮进行关注，结果显示在“我的关注”中</li>
+  								<li class="list-group-item">游戏多的用户列表较长（有待优化）</li>
+  							</ul>
+					</div>
+             	</div>
+             	<div class="col-md-6 column ui-sortable">
+             		<div class="panel panel-danger">
+   						 <div class="panel-heading">
+    	    				<h3 class="panel-title"><i class="fa fa-steam fa-5x"></i>我的好友</h3>
+    					</div>
+  							<ul class="list-group">
+  								<li class="list-group-item">统计所有在绑定账户下的好友</li>
+  								<li class="list-group-item">包含哈有的头像、昵称</li>
+  								<li class="list-group-item">上次在线情况</li>
+  								<li class="list-group-item">当前在线情况及正在玩的游戏</li>
+  							</ul>
+					</div>
+             	</div>
+             	<div class="col-md-6 column ui-sortable">
+             		<div class="panel panel-success">
+   						 <div class="panel-heading">
+    	    				<h3 class="panel-title"><i class="fa fa-search fa-5x"></i>用户查询</h3>
+    					</div>
+  							<ul class="list-group">
+  								
+  								<li class="list-group-item">在搜索框中输入steam64位id即可查询相应id的用户信息</li>
+  								<li class="list-group-item">必须输入steam64位个人id</li>
+  								<li class="list-group-item">查询结果包含头像、昵称、真实姓名、地址、注册时间等</li>
+  								<li class="list-group-item">如果有自定义的url可能也是能查得到的（有待优化）</li>
+  							</ul>
+   							 
+					</div>
+             	</div>
+             </div>
+           </div>  
                 
-                
-                
-   <div class="row">
-        <div class="row">
-                <div class="col-lg-12">
-                    
-							<div class="well well-sm">
-							<div class="row clearfix">
-      					<div class="col-md-12 ">
-      						<div class="box box-element">
-      							<div class="jumbotron" contenteditable="true"> 
-      							<h1><font>Steam Manager</font></h1>
-      							<p><font>is an online query system for steam store information,</font>
-      							<font>but it's not perfect yet,</font>
-      							<font>but we'll try our best to do it well.</font>
-      							</p>
-      							<a class="btn btn-primary btn-large" href="about.html">Learn about</a>
-      							</div>
-      						</div>
-      						</div>
-   <div class="col-lg-12">         
-   <div id="myCarousel" class="carousel slide">
-	<!-- è½®æ­ï¼Carouselï¼ææ  -->
-	<ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-	</ol>   
-	<!-- è½®æ­ï¼Carouselï¼é¡¹ç® -->
-	<div class="carousel-inner">
-		<div class="item active">
-			<img src="${pageContext.request.contextPath}/csgo.jpg" alt="First slide" width="100%" heigth="300px">
-		</div>
-		<div class="item">
-			<img src="${pageContext.request.contextPath}/hitman.jpg" alt="Second slide"  width="100%" height="300px">
-		</div>
-		<div class="item">
-			<img src="${pageContext.request.contextPath}/hitman2.jpg" alt="Third slide"  width="100%" height="300px">
-		</div>
-	</div>
-	
-	<!-- è½®æ­ï¼Carouselï¼å¯¼èª -->
-	<a class="carousel-control left" href="#myCarousel" 
-	   data-slide="prev">&lsaquo;</a>
-	<a class="carousel-control right" href="#myCarousel" 
-	   data-slide="next">&rsaquo;</a>
-</div> 
-</div> 
-</div> 
+  
     <!-- /#wrapper -->
 
     <!-- jQuery -->

@@ -19,7 +19,7 @@ public class LoginDaoImpl implements LoginDao {
         return loginMapper.getUserByName(username);
     }
     
-    public void addNewUser(String username, String password){
-    	loginMapper.createUser(username, password);
+    public void addNewUser(String username, String password, String steamid){
+    	loginMapper.createUser(username, password, steamid);
     }
 }

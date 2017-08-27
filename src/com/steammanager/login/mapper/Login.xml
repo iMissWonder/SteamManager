@@ -16,7 +16,7 @@
 		</select>
 		
 		<insert id="createUser">  
-        		insert into userinfo(user_name,user_password) values(#{name},#{pwd})  
+        		insert into userinfo(user_name,user_password,user_steam_id) values(#{name},#{pwd},#{steamid})  
 		</insert>  
 
 	</mapper>

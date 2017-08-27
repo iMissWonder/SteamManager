@@ -8,5 +8,5 @@ public interface LoginMapper {
  
 	public Login getUserByName(String username); 
 
-	public void createUser(@Param("name")String username,@Param("pwd")String password);
+	public void createUser(@Param("name")String username,@Param("pwd")String password,@Param("steamid")String steamid);
 }

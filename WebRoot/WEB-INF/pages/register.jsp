@@ -54,7 +54,10 @@
                                     <input class="form-control" placeholder="Please Enter Username" id = "username" name="username" type="text" autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Plsese Enter Password" id = "password" name="password" type="password">
+                                    <input class="form-control" placeholder="Please Enter Password" id = "password" name="password" type="password">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Enter Your SteamID64" id = "steamid" name="steamid" type="text">
                                 </div>
                                 <div class="checkbox">
                                     <label>

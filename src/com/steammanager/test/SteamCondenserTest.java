@@ -1,6 +1,4 @@
-package com.steammanager.steamapi;
-
-
+package com.steammanager.test;
 
 import com.github.koraktor.steamcondenser.steam.community.*;
 
@@ -10,7 +8,7 @@ import java.util.Map.Entry;
 
 import com.github.koraktor.steamcondenser.exceptions.*;
 
-public class SteamAPITest {
+public class SteamCondenserTest {
 
 	
 	public static void main(String[] args) {
@@ -19,7 +17,7 @@ public class SteamAPITest {
 			WebApi.setApiKey("AE4BA6A15C4F64A797EF1F30D92156BA");
 
 			//根据steam用户名创建steamId
-			SteamId id = SteamId.create("j9j8j7p");
+			SteamId id = SteamId.create("iMissWonder");
 		
 			//以下可以输出不同字段
 			//测试输出头像Url

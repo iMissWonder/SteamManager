@@ -18,6 +18,11 @@ import com.github.koraktor.steamcondenser.exceptions.SteamCondenserException;
 import com.github.koraktor.steamcondenser.steam.community.SteamGame;
 import com.github.koraktor.steamcondenser.steam.community.SteamId;
 import com.github.koraktor.steamcondenser.steam.community.WebApi;
+
+import com.github.goive.steamapi.SteamApi;
+import com.github.goive.steamapi.data.SteamApp;
+import com.github.goive.steamapi.exceptions.SteamApiException;
+
 import com.steammanager.login.entity.Login;
 import com.steammanager.myapps.entity.Myapps;
 import com.steammanager.myapps.service.MyappsService;

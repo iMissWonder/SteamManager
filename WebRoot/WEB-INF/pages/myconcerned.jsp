@@ -1,6 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
 
@@ -59,8 +60,7 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                    </a>
-                  
+                    </a>                  
                     <!-- /.dropdown-messages -->
                 </li>
                 <!-- /.dropdown -->
@@ -78,7 +78,7 @@
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="myaccount.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
@@ -95,104 +95,79 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                       
-                        <li>
-                            <a href="index"><i class="fa fa-home fa-fw"></i>首页</a>
+                    
+                         <li>
+                            <a href="index.html"><i class="fa fa-home fa-fw"></i>首页</a>
                         </li>
                         <li>
-                            <a href="myconcerned"><i class="fa fa-lightbulb-o fa-fw"></i>我的关注</a>
+                            <a href="myconcerned.html"><i class="fa fa-lightbulb-o fa-fw"></i>我的关注</a>
                         </li>
                         <li>
-                            <a href="storeinfo"><i class="fa fa-shopping-cart fa-fw"></i>商店信息</a>
+                            <a href="storeinfo.html"><i class="fa fa-shopping-cart fa-fw"></i>商店信息</a>
                         </li>
                         <li>
-                            <a href="myaccount"><i class="fa fa-smile-o fa-fw"></i>我的账户</a>
+                            <a href="myaccount.html"><i class="fa fa-smile-o fa-fw"></i>我的账户</a>
                         </li>
                         <li>
-                        	<a href="myapps"><i class="fa fa-gamepad"></i>我的游戏</a>
+                        	<a href="myapps.html"><i class="fa fa-gamepad"></i>我的游戏</a>
                         </li>
                          <li>
-                        	<a href="myfriends"><i class="fa fa-steam"></i>我的好友</a>
+                        	<a href="myfriends.html"><i class="fa fa-steam"></i>我的好友</a>
                         </li>
                         <li>
-                        	<a href="userq"><i class="fa fa-search"></i> 用户查询</a>
+                        	<a href="userq.html"><i class="fa fa-search"></i> 用户查询</a>
                         </li>
                          <li>
-                        	<a href="about"><i class="fa fa-key"></i> 关于我们</a>
+                        	<a href="blank.html"><i class="fa fa-key"></i> 关于我们</a>
                         </li>
                         <li>
-                             <a href="login"><i class="fa fa-lock"></i> 登入登出</a>
+                             <a href="login.html"><i class="fa fa-lock"></i> 登入登出</a>
                        	</li>
                        
+                        </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-
-        <!-- Page Content -->
-        <div id="page-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-9">
-             
-                    </div>
-                    <!-- /.col-lg-12 -->
-                </div>
-                </div>
-                
-                
-                
-   <div class="row">
-        <div class="row">
+        
+     <div id="page-wrapper">
+            <div class="row">
                 <div class="col-lg-12">
-                    
-							<div class="well well-sm">
-							<div class="row clearfix">
-      					<div class="col-md-12 ">
-      						<div class="box box-element">
-      							<div class="jumbotron" contenteditable="true"> 
-      							<h1><font>Steam Manager</font></h1>
-      							<p><font>is an online query system for steam store information,</font>
-      							<font>but it's not perfect yet,</font>
-      							<font>but we'll try our best to do it well.</font>
-      							</p>
-      							<a class="btn btn-primary btn-large" href="about.html">Learn about</a>
-      							</div>
-      						</div>
-      						</div>
-   <div class="col-lg-12">         
-   <div id="myCarousel" class="carousel slide">
-	<!-- è½®æ­ï¼Carouselï¼ææ  -->
-	<ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-	</ol>   
-	<!-- è½®æ­ï¼Carouselï¼é¡¹ç® -->
-	<div class="carousel-inner">
-		<div class="item active">
-			<img src="${pageContext.request.contextPath}/csgo.jpg" alt="First slide" width="100%" heigth="300px">
-		</div>
-		<div class="item">
-			<img src="${pageContext.request.contextPath}/hitman.jpg" alt="Second slide"  width="100%" height="300px">
-		</div>
-		<div class="item">
-			<img src="${pageContext.request.contextPath}/hitman2.jpg" alt="Third slide"  width="100%" height="300px">
-		</div>
-	</div>
-	
-	<!-- è½®æ­ï¼Carouselï¼å¯¼èª -->
-	<a class="carousel-control left" href="#myCarousel" 
-	   data-slide="prev">&lsaquo;</a>
-	<a class="carousel-control right" href="#myCarousel" 
-	   data-slide="next">&rsaquo;</a>
-</div> 
-</div> 
-</div> 
-    <!-- /#wrapper -->
-
+                    <h1 class="page-header">我的关注</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+      		<!-- table -->
+      		<table class="table table-bordered table-hover table-striped"  text-align="center">
+      			<thead>
+      				<tr>
+      					<th>游戏ID</th>
+      					<th>游戏名</th>
+      					<th>游戏logo</th>
+      					<th>价格</th>	
+      					<th>游戏原价</th>
+      					<th>折扣</th>
+      			</thead>
+				<c:forEach var="re" items="${result.getMyconcernedCollocation()}">
+					  <tbody>
+						  <tr>
+							  <td>${re.getId()}</td>
+							  <td>${re.getName()}</td>
+							  <td><img src="${re.getImage()}" /> </td>
+							  <td>${re.getPrice()}</td>
+							  <td>${re.getInitial()}</td>
+							  <td>${re.getDiscount()}</td>
+						  </tr>
+					  </tbody>
+				</c:forEach>
+      		</table>
+							
+              
+      
     <!-- jQuery -->
     <script src="${pageContext.request.contextPath}/bower_components/jquery/dist/jquery.min.js"></script>
 

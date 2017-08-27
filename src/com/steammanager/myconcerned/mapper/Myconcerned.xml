@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.steammanager.myconcerned.mapper.MyconcernedMapper">
+
+		<resultMap type="com.steammanager.myconcerned.entity.Myconcerned" id="myconcernedMap">
+			<id property="id" column="app_id" />
+			<result property="name" column="app_name" />
+			<result property="image" column="app_image" />        
+			<result property="price" column="app_price" />        
+			<result property="initial" column="app_initial" />        
+			<result property="discount" column="app_discount" />        
+		</resultMap>
+
+		<select id="selectMyconcerned" resultMap = "myconcernedMap"> 
+			select * from app where app_id = any(select app_id from follow where user_id = #{userid});
+		</select>  
+
+	</mapper>
